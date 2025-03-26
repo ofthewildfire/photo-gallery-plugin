@@ -1,0 +1,20 @@
+<div class="gallery-details">
+    <h1>{{ gallery.title }}</h1>
+    <div class="featured-image">
+        <img src="{{ gallery.featured_image }}" alt="{{ gallery.title }}" />
+    </div>
+    <div class="gallery-images">
+        <a data-fancybox="gallery" href="{{ image.url }}" class="gallery-image" 
+           v-for="image in gallery.images" :key="image.id">
+            <img :src="image.thumbnail_url" alt="Gallery Image" />
+        </a>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('[data-fancybox="gallery"]').fancybox({
+            // Options for fancybox can be configured here
+        });
+    });
+</script>

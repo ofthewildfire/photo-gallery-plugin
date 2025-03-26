@@ -1,0 +1,7 @@
+<div class="featured-image">
+    <a href="{{ 'gallery/details.htm'|page({ galleryId: gallery.id }) }}">
+        <img src="{{ gallery.featured_image }}" alt="{{ gallery.title }}" class="img-responsive" />
+    </a>
+    <h3>{{ gallery.title }}</h3>
+    <p>{{ gallery.description }}</p>
+</div>

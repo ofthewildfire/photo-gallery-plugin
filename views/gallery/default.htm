@@ -1,0 +1,36 @@
+<div class="gallery-container">
+    <h1>Photo Gallery</h1>
+    <div class="gallery-row">
+        {% for gallery in galleries %}
+            <div class="gallery-item">
+                <a href="{{ 'gallery/details'|page({ id: gallery.id }) }}">
+                    <img src="{{ gallery.featured_image }}" alt="{{ gallery.title }}" class="featured-image">
+                </a>
+                <h2>{{ gallery.title }}</h2>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .gallery-item {
+        margin: 10px;
+        text-align: center;
+    }
+    .featured-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+</style>
