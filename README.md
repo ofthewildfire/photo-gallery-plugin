@@ -1,4 +1,4 @@
-# Photo Gallery Plugin for OctoberCMS
+<!-- # Photo Gallery Plugin for OctoberCMS
 
 ## Overview
 The Photo Gallery Plugin is designed to provide a seamless way to showcase images in a gallery format on your OctoberCMS website. The plugin features a "featured image" that serves as the entry point to a detailed gallery page, which includes a fancybox lightbox for viewing additional images.
@@ -26,4 +26,4 @@ You can configure the plugin settings in the backend after installation. This in
 If you would like to contribute to the development of this plugin, please feel free to submit a pull request or open an issue on the GitHub repository.
 
 ## License
-This plugin is open-source and available under the MIT License.
+This plugin is open-source and available under the MIT License. -->
